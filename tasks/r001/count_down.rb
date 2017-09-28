@@ -6,14 +6,17 @@ class QuietPrintMethod
 
 	def initialize
 		@duration = 0
-		@lastTime = Time.now
+		@lastMessageTime = Time.now
 	end
 
 	#Does not print a message
 	def print(message)
-		@duration += (Time.now - @lastTime)
+		time = Time.now
 
-		#Throw away the message
+		@duration += (time - @lastMessageTime)
+
+		@lastMessageTime = time
+
 		@message = message
 
 	end
@@ -58,7 +61,7 @@ end
 #A Test for the countdown operations class
 class CountDownTest < Minitest::Test
 
-	TIME = 5
+	TIME = 120
 
 	def test_timed_countdown
 		printer = QuietPrintMethod.new
@@ -67,7 +70,7 @@ class CountDownTest < Minitest::Test
 
 		counter.countdown(TIME)
 
-		duration = quietPrinter.timeInterval
+		duration = printer.timeInterval
 
 		assert (duration).round == TIME
 	end
