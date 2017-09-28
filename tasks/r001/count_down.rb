@@ -1,25 +1,27 @@
 require 'minitest/autorun'
 require 'benchmark'
 
-class R001
+#Responsible for handling countdown operations
+class CountDown
+
+	#Waits for a specific amount of time and prints output
 	def countdown(wait_time)
-		print wait_time.to_s + " seconds left\n"
-		sleep 1
-		wait_time = wait_time - 1
+		print wait_time.to_s + " seconds left\n" 
+
 		wait_time.downto(1).each do |time_left|
 			sleep 1
-			print time_left.to_s + " seconds left\n" if (time_left % 60) == 0
+			print time_left.to_s + " seconds left\n" if (((time_left % 60) == 0) && time_left !=  wait_time)
 		end
-		print "\a"
 	end
 end
 
-class R001Test < Minitest::Test
-	def test_countdown
-		rubyProgram = R001.new
+#A Test for the countdown operations class
+class CountDownTest < Minitest::Test
+	def test_120_second_countdown
+		counter = CountDown.new
 
 		time = Benchmark.measure {
-			rubyProgram.countdown(120)
+			counter.countdown(120)
 		}
 
 		assert (time.real).round == 120
