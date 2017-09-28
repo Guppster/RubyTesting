@@ -1,0 +1,181 @@
+commit 1bc01bde9b060e57a9a8ce12007fbe8115f94375
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 27 22:15:34 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit b8b5c51381dbdf437fb93ed93d20f5415f9f4f9e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 21:35:34 2017 -0400
+
+    RPT: r001 12
+    
+    Fixed code smells but one about the camel case varible names still
+    exists because the instructions also use a camel case name for the
+    timeInterval method. Found and fixed a bug with the duration counting
+    part of quietprinter
+
+commit 249f934f1448100f549b1eb24028b81d5a529308
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 21:17:28 2017 -0400
+
+    RPT: r001 30
+    
+    Finished functional part of step 6. Still need to correct reek results.
+    Experimented with different ways of obtaining duration in
+    QuietPrintMethod and found a clean way that works. I am finding instance
+    varible notation in Ruby very confusing. '@' is annoying.
+
+commit 3644bfef87b9d4086e7fe1e6ebf2087aa4c6bcb8
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 20:43:48 2017 -0400
+
+    RPT: r001 30
+    
+    Finished step 4 and 5 by implementing QuietPrintMethod and fixing code smells.
+    Looked up how to make interfaces in Ruby because there should be one
+    describing QuietPrintMethod and PrintMethod because they both
+    provide print functionality but to my surprise ruby
+    doesn't even support interfaces.
+
+commit 851b86d5108aaab0637054e69c5bed93a5eee05e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 20:10:54 2017 -0400
+
+    RPT: r001 21
+    
+    Finished steps two and three. Used reek to repair all the code
+    smells. I struggled to come up with variable names that reek found
+    acceptable but eventually found some.
+
+commit f4fc2961dcc130944d3335a53c6d80c287487075
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 19:48:37 2017 -0400
+
+    RPT: r001 30
+    
+    Solves step one. One challenge I ran into was that the assertion was
+    failing because the recorded time was slighty larger than 120 seconds
+    and i solved this by rounding the result
+
+commit d09f3218addd4414514f4f2482133fa81742335b
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 17:58:02 2017 -0400
+
+    RPT: r001 30
+    
+    Starting this task I began looking for the countdown file that
+    was specified in the r001_description. I was unable to find the file in
+    the folder specified so I asked a classmate for the location. After
+    retrieving the hidden file from the bin directory I installed the
+    minitest gem, made countdown into a method and began writing a test for
+    the method.
+
+commit 67517392b747bc419ea2f41f70995055e70fb045
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 27 17:09:18 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 740e9d33f4ea6ec234f7d04ca46dd79e504dd00c
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 16:51:13 2017 -0400
+
+    RPT: i002 11
+    
+    Installed RubyGem from rubygems.org and bundler from bundler.io without
+    any problems.
+
+commit 55a061a0dbfd1ea96e5582a01e88984b851d3475
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 16:00:26 2017 -0400
+
+    RPT: i001 22
+    
+    Installed Ruby and setup Bitbucket to be able to pull from repo.
+    Spent a few minutes looking into rbenv and rvm but decided to just
+    install Ruby directly from my package manager instead.
+
+commit 51dc16f764986a89d854f5ab03fc32b050ce1441
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 27 14:42:13 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 52b2f1e8719cc4e281341e9e9d5de8c7854cabb7
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Sep 26 16:30:52 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 657b2e10531e7427eb1f4eb82b30784a7efe67d7
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Mon Sep 25 22:28:43 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit f129377a784f1e60488a0a3cbde5bf733317d9f6
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sun Sep 24 21:06:27 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 7e03fccc70b3f95319d1201fd626e5e6c9f4a4c4
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sat Sep 23 21:31:55 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 459d5eea6010b52ace3c82b539dc5413e3e2df5b
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Sep 22 22:28:25 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 4af399f403277148997086756aba5f2c32f2fd32
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Sep 22 17:21:03 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 00823733ef89db650129458361bc57ba482d065c
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Sep 22 17:19:31 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit b801cf3c7d4ec30803764287e9ab0be68d099a39
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 20 22:06:09 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 0e4473de9409ce7439574c0cafe803a24e221185
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 20 22:04:25 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 8a84a881f3f7c2c3cb1e41922c7719e567c3e54c
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 20 19:35:14 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit b4ffd4413f693b0388f495fa22b2d304bf24f912
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 20 13:46:29 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 677fce43de2c13483e9073d343e5c1dea75eea44
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Sep 19 17:03:12 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 993ff6b482b202560b07c5358919229dbf70dbe1
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Sep 19 17:00:04 2017 -0400
+
+    updating practice framework and running summary.rb
