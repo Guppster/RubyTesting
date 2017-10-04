@@ -1,5 +1,11 @@
 #Responsible for storing data about a single object
 class Item < Struct.new(:name, :price, :deal)
+    def sell(quantity)
+
+        return quantity * price - get_sale(quantity)
+    end
+
+    private
     def get_sale(quantity)
         if (deal != nil)
             return deal.evaluate(quantity)
@@ -31,21 +37,19 @@ class Store
     def sell_receipt(receipt)
         #Calculate cost
         receipt.inject(0) do | total_cost, (item, quantity) |
-            total_cost + sell_item(item, quantity)
+            total_cost + find_object(item).sell(quantity)
         end
     end
 
-    #Given a single item, determines its value
-    def sell_item(item, quantity)
-        eval_object = @objects.detect{|object| object.name == item}
-
-        return quantity * eval_object.price - eval_object.get_sale(quantity)
+    def find_object(item)
+        return @objects.detect{|object| object.name == item}
     end
+
 end
 
 RULES = Store.new([
-    Item.new("A", 50, Discount.new(3, 130)),
-    Item.new("B", 30, Discount.new(2, 45)),
+    Item.new("A", 50, Discount.new(3, 20)),
+    Item.new("B", 30, Discount.new(2, 15)),
     Item.new("C", 20),
     Item.new("D", 15) 
 ])
