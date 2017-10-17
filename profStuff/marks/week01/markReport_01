@@ -9,7 +9,9 @@ Mark_for_Practice_Review_01_out_of_10: In_progress
 07_Other_stuff_done_only_in_myStuff:
 08_Appropriate_comments_on_practice_work_fast_check:
 09_Appropriate_comments_on_practice_work_slower_read:
-10_Sufficient_detail_on_practice_notes_fast_check:
+10_Sufficient_detail_on_practice_notes_fast_check:  `struggled' is not useful
+knowledge for how to avoid problem in future.  what was difficult about finding
+acceptable variable names and how did you figure it out?  
 11_Sufficient_detail_on_practice_notes_slower_read:
 12_Reasonable_code_on_programming_and_testing_practices_fast:
 13_Reasonable_code_on_programming_and_testing_practices_slower:
