@@ -1,22 +1,23 @@
 # Responsible for the entire game
 class Game
 
-  attr_accessor :current_score
+  attr_reader :current_score
 
   def initialize
     @current_score = [[0,0,0],[0,0,0],[0,0,0]]
+    @three = 3.0
   end
 
   def row1_chosen?(piece)
-    (piece / 3.0 <= 1)
+    (piece / @three <= 1)
   end
 
   def row2_chosen?(piece)
-    (piece / 3.0 <= 2)
+    (piece / @three <= 2)
   end
 
   def row3_chosen?(piece)
-    (piece / 3.0 <= 3)
+    (piece / @three <= 3)
   end
 
   def row_locator(piece)
@@ -53,35 +54,36 @@ class Game
 
 end
 
+# Decides the score of a game
 class Scorer < Game
 
-  attr_accessor :score
+  attr_reader :score
 
   def initialize(*score)
     @score = score
   end
 
-  def row1
+  def row_one
     score[0]
   end
 
-  def row2
+  def row_two
     score[1]
   end
 
-  def row3
+  def row_three
     score[2]
   end
 
-  def col1
+  def col_one
     [row1[0],row2[0],row3[0]]
   end
 
-  def col2
+  def col_two
     [row1[1],row2[1],row3[1]]
   end
 
-  def col3
+  def col_three
     [row1[2],row2[2],row3[2]]
   end
 
@@ -94,7 +96,7 @@ class Scorer < Game
   end
 
   def win_location
-    possible_wins = [row1, row2, row3, col1, col2, col3, diag_left, diag_right]
+    possible_wins = [row_one, row_two, row_three, col_one, col_two, col_three, diag_left, diag_right]
     possible_wins.detect do |location|
       unless location.include?(0)
         location if location.uniq.count == 1
