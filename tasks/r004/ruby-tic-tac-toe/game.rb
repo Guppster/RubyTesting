@@ -8,31 +8,31 @@ class Game
     @three = 3.0
   end
 
-  def row1_chosen?(piece)
+  def row_one_chosen?(piece)
     (piece / @three <= 1)
   end
 
-  def row2_chosen?(piece)
+  def row_two_chosen?(piece)
     (piece / @three <= 2)
   end
 
-  def row3_chosen?(piece)
+  def row_three_chosen?(piece)
     (piece / @three <= 3)
   end
 
   def row_locator(piece)
     case
-      when row1_chosen?(piece) then 0
-      when row2_chosen?(piece) then 1
-      when row3_chosen?(piece) then 2
+      when row_one_chosen?(piece) then 0
+      when row_two_chosen?(piece) then 1
+      when row_three_chosen?(piece) then 2
     end
   end
 
   def column_locator(piece)
     case
-      when row1_chosen?(piece) then piece - 1
-      when row2_chosen?(piece) then piece - 4
-      when row3_chosen?(piece) then piece - 7
+      when row_one_chosen?(piece) then piece - 1
+      when row_two_chosen?(piece) then piece - 4
+      when row_three_chosen?(piece) then piece - 7
     end
   end
 
@@ -76,23 +76,23 @@ class Scorer < Game
   end
 
   def col_one
-    [row1[0],row2[0],row3[0]]
+    [row_one[0],row_two[0],row_three[0]]
   end
 
   def col_two
-    [row1[1],row2[1],row3[1]]
+    [row_one[1],row_two[1],row_three[1]]
   end
 
   def col_three
-    [row1[2],row2[2],row3[2]]
+    [row_one[2],row_two[2],row_three[2]]
   end
 
   def diag_left
-    [row1[0],row2[1],row3[2]]
+    [row_one[0],row_two[1],row_three[2]]
   end
 
   def diag_right
-    [row1[2],row2[1],row3[0]]
+    [row_one[2],row_two[1],row_three[0]]
   end
 
   def win_location
@@ -105,7 +105,7 @@ class Scorer < Game
   end
 
   def no_winner
-    win_location == nil
+      win_location == nil
   end
 
   def winner
