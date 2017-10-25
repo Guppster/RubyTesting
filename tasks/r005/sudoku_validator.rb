@@ -1,4 +1,6 @@
 require 'matrix'
+
+# Manages operation on Sudoku
 module Sudoku
 
   def self.validate(grid)
@@ -6,6 +8,7 @@ module Sudoku
     board.solved?
   end
 
+  # One board inside a sudoku game
   class Board
 
     VALID_CHUNK = (1..9).to_a.freeze
@@ -18,21 +21,19 @@ module Sudoku
     end
 
     def solved?
-      return false unless grid
+      return false unless @grid
 
-      rows = grid
+      rows = @grid
       columns = grid.transpose
-      blocks = build_blocks(grid)
+      blocks = build_blocks()
 
       (rows + columns + blocks).all? { |chunk| valid_chunk?(chunk) }
     end
 
     private
-
-
-    def build_blocks(grid)
-      matrix = Matrix.rows(grid)
-      num_blocks = grid.size
+    def build_blocks()
+      matrix = Matrix.rows(@grid)
+      num_blocks = @grid.size
       blocks = []
 
       (0...num_blocks).step(BLOCK_SIZE).each do |start_row|
@@ -45,18 +46,18 @@ module Sudoku
     end
 
     def build_blocks_without_matrix(grid)
-      num_blocks = grid.size
-      blocks_per_row = blocks_per_col = grid.size / BLOCK_SIZE
+      @num_blocks = grid.size
+      blocks_per_row = blocks_per_col = @num_blocks/ BLOCK_SIZE
 
-      blocks = (0...num_blocks).map do |block_index|
+      blocks = (0...@num_blocks).map do |block_index|
         block = []
-        row_offset = (block_index / blocks_per_row) * BLOCK_SIZE
-        col_offset = (block_index % blocks_per_col) * BLOCK_SIZE
+        @row_offset = (block_index / blocks_per_row) * BLOCK_SIZE
+        @col_offset = (block_index % blocks_per_col) * BLOCK_SIZE
 
         (0...BLOCK_SIZE).each do |row_index|
           (0...BLOCK_SIZE).each do |col_index|
-            row = row_index+row_offset
-            col = col_index+col_offset
+            row = @row_index+row_offset
+            col = @col_index+col_offset
             block << grid[row][col]
           end
         end
