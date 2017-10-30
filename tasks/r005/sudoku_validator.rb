@@ -22,12 +22,7 @@ module Sudoku
 
     def solved?
       return false unless @grid
-
-      rows = @grid
-      columns = grid.transpose
-      blocks = build_blocks()
-
-      (rows + columns + blocks).all? { |chunk| valid_chunk?(chunk) }
+      (@grid + grid.transpose + build_blocks()).all? { |chunk| VALID_CHUNK == chunk }
     end
 
     private
@@ -46,18 +41,18 @@ module Sudoku
     end
 
     def build_blocks_without_matrix(grid)
-      @num_blocks = grid.size
-      blocks_per_row = blocks_per_col = @num_blocks/ BLOCK_SIZE
+      num_blocks = grid.size
+      blocks_per_row = blocks_per_col = num_blocks/ BLOCK_SIZE
 
-      blocks = (0...@num_blocks).map do |block_index|
+      blocks = (0...num_blocks).map do |block_index|
         block = []
-        @row_offset = (block_index / blocks_per_row) * BLOCK_SIZE
-        @col_offset = (block_index % blocks_per_col) * BLOCK_SIZE
+        row_offset = (block_index / blocks_per_row) * BLOCK_SIZE
+        col_offset = (block_index % blocks_per_col) * BLOCK_SIZE
 
         (0...BLOCK_SIZE).each do |row_index|
           (0...BLOCK_SIZE).each do |col_index|
-            row = @row_index+row_offset
-            col = @col_index+col_offset
+            row = row_index+row_offset
+            col = col_index+col_offset
             block << grid[row][col]
           end
         end
@@ -68,9 +63,6 @@ module Sudoku
       blocks
     end
 
-    def valid_chunk?(chunk)
-      VALID_CHUNK == chunk.sort
-    end
   end
 
 end
