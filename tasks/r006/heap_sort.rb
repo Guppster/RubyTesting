@@ -11,14 +11,18 @@ class HeapSort
 
         the_end = input.length - 1
 
+        handle_end(the_end)
+
+        return @input
+    end
+
+    def handle_end(the_end)
         while the_end > 0
-            @input[the_end], @input[0] = @input[0], @input[the_end]
+            perform_swap(the_end, 0)
             
             the_end -= 1
             shift_down(0, the_end)
         end
-
-        return @input
     end
 
     def heapify
@@ -33,7 +37,6 @@ class HeapSort
     end
 
     def shift_down(the_start, the_end)
-
         while the_start * 2 + 1 <= the_end
             child = the_start * 2 + 1
 
@@ -49,12 +52,13 @@ class HeapSort
 
     def prepare_swap(swap, child)
             next_child = child + 1
+            input_swap = @input[swap]
 
-            if @input[swap] < @input[child]
+            if input_swap < @input[child]
                 swap = child
             end
 
-            if next_child <= the_rnd && @input[swap] < @input[next_child]
+            if next_child <= the_rnd && input_swap < @input[next_child]
                 swap = next_child
             end
             
