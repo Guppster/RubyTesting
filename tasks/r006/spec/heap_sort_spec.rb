@@ -1,5 +1,6 @@
 require 'spec_helper.rb'
 require './heap_sort.rb'
+require './array_watcher.rb'
 
 describe HeapSort do
     it "should sort a simple array" do
@@ -21,7 +22,13 @@ describe HeapSort do
 
     end
 
-    it "should sort a duplicat array" do
-        expect(HeapSort.new([3, 3, 2, 7, 7, 8, 9, 1]).heap_sort).to eq [1, 2, 3, 3, 7, 7, 8, 9]
+    it "should run in nlogn" do
+        (15...100).each { |counter|
+        array = ArrayWatcher.new(counter) { rand(1000) } 
+
+        HeapSort.new(array).heap_sort
+
+        expect(array.counter).to be < counter * sqrt(counter)
+        }
     end
 end

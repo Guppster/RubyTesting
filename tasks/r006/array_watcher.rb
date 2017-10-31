@@ -10,7 +10,7 @@ class ArrayWatcher
     end
 
     def length
-        @array.length
+        @array.size
     end
 
     def [](index)
