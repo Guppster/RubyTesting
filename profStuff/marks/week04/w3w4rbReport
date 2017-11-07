@@ -1,0 +1,55 @@
+1c1
+< total time reported is: 516.0
+---
+> total time reported is: 696.0
+212a213,262
+> 
+> commit 4f924ec53d2620d8d80c58c46b6f57348b1d43b2
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Tue Oct 24 17:30:12 2017 -0400
+> 
+>     RPT: r004 30
+>     
+>     Learned about the expect keyword and how to use it. Reverted an edit i made to the test files in my last commit and got them to work without having to edit the require statements. Learned about the .rspec config file in the root of the project. 24 failures right now using the new expect syntax, currently learning how to do comparisons with this syntax
+> 
+> commit 63dbb357666e149ebdea86ec41ffbfe4e58feb21
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Tue Oct 24 18:05:00 2017 -0400
+> 
+>     RPT: r004 30
+>     
+>     Learned the way to do comparisons with new expect syntax and fixed all errors in tests. 0 failures and 0 errors in the tests now.
+>     Then used the coverage report to find the line that was not being covered inside the game.rb file and wrote a test to cover when player2 wins thegame. Achieved 100% code coverage
+> 
+> commit 0493b717fb4b1d3cb0c07b9aad0a72771872bbaf
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Tue Oct 24 18:40:28 2017 -0400
+> 
+>     RPT: r004 30
+>     
+>     Changed accessor to reader, changed undescriptive method names to descriptive ones, and removed utiltiy functions.
+>     These all fixed all but one reek issue. Next is finding out how to avoid a nil check in game.rb.
+> 
+> commit a33786882c3f742af2bbd459735106109e8af946
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Tue Oct 24 19:11:37 2017 -0400
+> 
+>     RPT: r004 30
+>     
+>     When i fixed all the reek issues a lot of rspec tests started failing. This was due to some of the code i had renamed and moved around. I resolved all the issues and got the rspec tests running again. I also had to change some varaible names in the spec file because they were referencing variables directly and those variables had improper naming, so i also had to rename them in the spec file. Next i fixed one of the deprecation warnings by removing a line from the spec_helper file.
+> 
+> commit f829608a316a13ac5ffcdea8586c62b684aa00b4
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Tue Oct 24 19:45:29 2017 -0400
+> 
+>     RPT: r005 30
+>     
+>     In this iteration I downloaded the files and arranged them in the rspec format (spec directory). Then i had to create a spec_helper and require it in the spec test class. I also had to create a .rspec config file in the root of the project. Then in the spec_helper I enabled simple_cov and finally generated a coverage report as well as passing tests.
+> 
+> commit f1182b43cc6b0219fbc97f9c9d5f9cf6c86d53a5
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Tue Oct 24 21:50:52 2017 -0400
+> 
+>     RPT: r005 30
+>     
+>     Fixed many reek issues. Discovered I could make grid an instance varaible and remove a method parameter which reduced a lot of reek errors. Kept tests passing. 12 reek errors remain

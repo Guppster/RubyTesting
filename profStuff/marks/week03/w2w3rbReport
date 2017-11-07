@@ -1,0 +1,58 @@
+1c1
+< total time reported is: 366.0
+---
+> total time reported is: 516.0
+159a160,212
+> 
+> commit 857dfc72c3631b9a1dd3adb11b74a98d47415c66
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Oct 16 23:55:27 2017 +0000
+> 
+>     RPT: r003 30
+>     
+>     Copied over the files, and created the justify method.
+>     Solved the first test by using an nil check.
+>     9 failures remain.
+>     Planned out how to code the justify method
+> 
+> commit 39a489bdab3c598ff9336e6c9d5995b76c3e4a3d
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Tue Oct 17 01:39:25 2017 +0000
+> 
+>     RPT: r003 30
+>     
+>     Found a way to split words, and find the exact number of spaces needed
+>     in between words for the justify_line method. Currently challenged with
+>     placing the remainder amount of spaces into the correct positon.
+>     
+>     9 failures no errors and code smells still exist
+> 
+> commit c8f33e81abf7395f45141341140a853d4730bb1f
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Tue Oct 17 03:03:04 2017 +0000
+> 
+>     RPT: r003 30
+>     
+>     Figured out how to handle remainders in justify_line() and began working
+>     on justify(). 4 failures and 0 errors. Code smells still remain to be
+>     fixed
+> 
+> commit 69789b3a230a04b9edc45c607540d6b8f5e9c8c8
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Thu Oct 19 00:41:47 2017 -0400
+> 
+>     RPT: r003 30
+>     
+>     Finally got reek to accept my r003 code. I learned how to split up ruby code in chunks of 3 lines
+>     and how to avoid feature envy by putting data into instance variables. (Even though we don't create an instance of this class).
+>     Currently at 5 failures 0 errors.
+> 
+> commit b1cf8947f4e6baa94e18274f9138aae41c57e219
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Thu Oct 19 01:30:00 2017 -0400
+> 
+>     RPT: r004 30
+>     
+>     I fixed the rspec problems, read the blog post and setup simplecov.
+>     Then i began fixing reek problems.  Simplecov successfully found out
+>     the coverage of the testing.

@@ -1,0 +1,87 @@
+total time reported is: 186.0
+commit 55a061a0dbfd1ea96e5582a01e88984b851d3475
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 16:00:26 2017 -0400
+
+    RPT: i001 22
+    
+    Installed Ruby and setup Bitbucket to be able to pull from repo.
+    Spent a few minutes looking into rbenv and rvm but decided to just
+    install Ruby directly from my package manager instead.
+
+commit 740e9d33f4ea6ec234f7d04ca46dd79e504dd00c
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 16:51:13 2017 -0400
+
+    RPT: i002 11
+    
+    Installed RubyGem from rubygems.org and bundler from bundler.io without
+    any problems.
+
+commit d09f3218addd4414514f4f2482133fa81742335b
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 17:58:02 2017 -0400
+
+    RPT: r001 30
+    
+    Starting this task I began looking for the countdown file that
+    was specified in the r001_description. I was unable to find the file in
+    the folder specified so I asked a classmate for the location. After
+    retrieving the hidden file from the bin directory I installed the
+    minitest gem, made countdown into a method and began writing a test for
+    the method.
+
+commit f4fc2961dcc130944d3335a53c6d80c287487075
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 19:48:37 2017 -0400
+
+    RPT: r001 30
+    
+    Solves step one. One challenge I ran into was that the assertion was
+    failing because the recorded time was slighty larger than 120 seconds
+    and i solved this by rounding the result
+
+commit 851b86d5108aaab0637054e69c5bed93a5eee05e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 20:10:54 2017 -0400
+
+    RPT: r001 21
+    
+    Finished steps two and three. Used reek to repair all the code
+    smells. I struggled to come up with variable names that reek found
+    acceptable but eventually found some.
+
+commit 3644bfef87b9d4086e7fe1e6ebf2087aa4c6bcb8
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 20:43:48 2017 -0400
+
+    RPT: r001 30
+    
+    Finished step 4 and 5 by implementing QuietPrintMethod and fixing code smells.
+    Looked up how to make interfaces in Ruby because there should be one
+    describing QuietPrintMethod and PrintMethod because they both
+    provide print functionality but to my surprise ruby
+    doesn't even support interfaces.
+
+commit 249f934f1448100f549b1eb24028b81d5a529308
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 21:17:28 2017 -0400
+
+    RPT: r001 30
+    
+    Finished functional part of step 6. Still need to correct reek results.
+    Experimented with different ways of obtaining duration in
+    QuietPrintMethod and found a clean way that works. I am finding instance
+    varible notation in Ruby very confusing. '@' is annoying.
+
+commit b8b5c51381dbdf437fb93ed93d20f5415f9f4f9e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 21:35:34 2017 -0400
+
+    RPT: r001 12
+    
+    Fixed code smells but one about the camel case varible names still
+    exists because the instructions also use a camel case name for the
+    timeInterval method. Found and fixed a bug with the duration counting
+    part of quietprinter
+

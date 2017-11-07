@@ -1,0 +1,77 @@
+1c1
+< total time reported is: 696.0
+---
+> total time reported is: 889.0
+262a263,334
+> 
+> commit 660493dae101ee56e3e4ea7abd8d523de2735048
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Oct 30 18:41:30 2017 -0400
+> 
+>     RPT: r005 30
+>     
+>     Reduced 12 reek errors down to 8 by removing utility functions and
+>     rewriting parts of the code. Did not figure out how I can remove the
+>     nested loops and therefore those reek errors still exist. Still
+>     researching how the solution can work without the nested loops.
+> 
+> commit b6290e7edf4017361d5de440afe4004f5deb18d3
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Oct 30 19:13:25 2017 -0400
+> 
+>     RPT: r006 20
+>     
+>     Finished steps 1 and 2. Test for simple array sorting works good.
+> 
+> commit e0a3fc5fecb098499584eaa5d8b9c550eaa7d04b
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Oct 30 19:42:30 2017 -0400
+> 
+>     RPT: r006 25
+>     
+>     Finished Step 3 and got 100% coverage by writing two more tests. Learned
+>     about the sort method on arrays and used it to clean up my tests.
+> 
+> commit 991e7065dc05b9f8705c6e44e644295fb0eb306b
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Oct 30 20:15:27 2017 -0400
+> 
+>     RPT: r006 30
+>     
+>     Almost finished step 4. Fixed most reek issues, only 4 reek issues
+>     remain. I have improved a lot at satisfying reek, spliting stuff into
+>     methods has gotten easier in Ruby.
+> 
+> commit e5732ec512d9c092040c3b3aac774ac720d7b24e
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Oct 30 21:34:09 2017 -0400
+> 
+>     RPT: r006 30
+>     
+>     Finished step 4 and started 5. Fixed remaining reek issues in the
+>     heap_sort file. Described the array_watcher class and learned lots about
+>     methods you can write for classes in ruby. Specifically researched
+>     "self.{name}" methods and then methods with operator syntax. I think
+>     these are really useful and can't wait to implement them
+> 
+> commit 61e00c013081ac476ef48abb95aa30fcc2e28f1b
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Oct 30 22:55:14 2017 -0400
+> 
+>     RPT: r006 30
+>     
+>     Finished creating and testing ArrayWatcher. All tests pass and reek is
+>     satisfied. Had to look up attr_reader / attr_accessor again because i
+>     forgot about them.
+> 
+> commit 9585493e01e25413788eb2a95dbdf0cc2c8a821c
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Oct 30 23:33:35 2017 -0400
+> 
+>     RPT: r006 28
+>     
+>     Implemented the performance testing code using array_watcher as a test
+>     inside the spec of heap_sort. Test is failing but I didn't have time to
+>     diagnose the error. Next time i continue I will ask for help on this
+>     topic as im not sure if im comparing the BIG O correctly using the array
+>     operations counter.
