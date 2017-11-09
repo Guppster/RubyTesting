@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/singh/Documents/Projects/gsingh95/tasks/r006/spec/array_watcher_spec.rb": [
+      "/home/singh/Documents/Projects/CS4472/tasks/r006/spec/array_watcher_spec.rb": [
         1,
         1,
         null,
@@ -42,7 +42,7 @@
         null,
         null
       ],
-      "/home/singh/Documents/Projects/gsingh95/tasks/r006/array_watcher.rb": [
+      "/home/singh/Documents/Projects/CS4472/tasks/r006/array_watcher.rb": [
         null,
         null,
         1,
@@ -69,7 +69,7 @@
         null,
         null
       ],
-      "/home/singh/Documents/Projects/gsingh95/tasks/r006/spec/heap_sort_spec.rb": [
+      "/home/singh/Documents/Projects/CS4472/tasks/r006/spec/heap_sort_spec.rb": [
         1,
         1,
         1,
@@ -105,7 +105,7 @@
         null,
         null
       ],
-      "/home/singh/Documents/Projects/gsingh95/tasks/r006/heap_sort.rb": [
+      "/home/singh/Documents/Projects/CS4472/tasks/r006/heap_sort.rb": [
         null,
         1,
         1,
@@ -180,6 +180,6 @@
         null
       ]
     },
-    "timestamp": 1509420771
+    "timestamp": 1510182783
   }
 }
