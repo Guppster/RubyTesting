@@ -4,7 +4,7 @@ class Sort
 
   def self.quicksort(ar, lo, hi)
     if (hi - lo) < 20
-      insertionSort(ar, lo, hi)
+      insertion_sort(ar, lo, hi)
     else
       while lo < hi
         p = partition(ar, lo, hi)
@@ -40,26 +40,25 @@ class Sort
   def self.choose_pivot(ar, left, right)
     center = (left + right) / 2
 
-    return left if (ar[left] - ar[right]) * (ar[center] - ar[left]) >= 0
+    return left if (ar.fetch(left) - ar.fetch(right)) * (ar.fetch(center) - ar.fetch(left)) >= 0
 
-    return right if (ar[right] - ar[left]) * (ar[center] - ar[right]) >= 0
+    return right if (ar.fetch(right) - ar.fetch(left)) * (ar.fetch(center) - ar.fetch(right)) >= 0
 
     center
   end
 
   def self.insertion_sort(ar, lo, hi)
-=begin
-    (lo + 1..hi).each do |i|
-      value = ar[i]
+    (lo + 1).upto(hi) do |i|
+      value = ar.fetch(i)
       j = i - 1
+
       while j >= 0 && ar[j] > value
-        ar[j + 1] = ar[j]
+        ar[j + 1] = ar.fetch(j)
         j -= 1
       end
+
       ar[j + 1] = value
     end
-=end
-
-    quicksort(ar,lo,hi)
+    return ar
   end
 end

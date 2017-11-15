@@ -12,12 +12,12 @@ describe Sort do
     end
   end
 
-  describe  "choose_pivot" do
-    let(:input) {[1,-6,-1, -1, -5]}
+  describe  "choose center_pivot" do
+    let(:input) {[1,2,3,4,5,6]}
     let(:output) {subject.choose_pivot(input, 1, input.length - 1)}
 
     it "choose pivot element" do
-      expect(output).to eq 4
+      expect(output).to eq 3
     end
   end
 
@@ -25,7 +25,7 @@ describe Sort do
     let(:input) { [3, 6, 2, 3, 9, 7] }
     let(:output) { subject.partition(input, 0, input.length - 1) }
 
-    it "partition around the pivot.return index of the pivot element" do
+    it 'partition around the pivot.return index of the pivot element' do
       expect(output).to eq 2
     end
   end
@@ -48,7 +48,15 @@ describe Sort do
     end
   end
 
-  describe  "quicksort" do
+  describe  "quicksort center pivot" do
+    let(:input) {[1,-6,-1, -1, -5]}
+    let(:output) { subject.quicksort(input, 5, input.length - 1) }
+
+    it "sort of array" do
+    end
+  end
+
+  describe  "quicksortbig" do
     let(:input) {[3,6,2,3,9,6,2,3,9,6,2,3,9,6,2,3,9,6,2,3,9,6,2,3,9,6,2,3,9,6,2,3,9,7]}
     let(:output) {subject.quicksort(input, 0, input.length - 1)}
 
