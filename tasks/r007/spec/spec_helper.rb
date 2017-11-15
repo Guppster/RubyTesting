@@ -1,4 +1,3 @@
-require 'quicksort_median_of_three'
 require 'simplecov'
 require 'timeout'
 
@@ -12,4 +11,4 @@ RSpec.configure do |c|
   end
 end
 
-
+require 'quicksort_median_of_three'

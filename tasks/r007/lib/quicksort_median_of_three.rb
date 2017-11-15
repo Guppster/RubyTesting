@@ -3,14 +3,10 @@ require "quicksort_median_of_three/version"
 class Sort
 
   def self.quicksort(ar, lo, hi)
-    if (hi - lo) < 20
-      insertion_sort(ar, lo, hi)
-    else
-      while lo < hi
-        p = partition(ar, lo, hi)
-        quicksort(ar, lo, p - 1)
-        lo = p + 1
-      end
+    while lo < hi
+      p = partition(ar, lo, hi)
+      quicksort(ar, lo, p - 1)
+      lo = p + 1
     end
 
     ar
