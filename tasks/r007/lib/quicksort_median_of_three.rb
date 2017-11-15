@@ -51,8 +51,7 @@ class Sort
     end
   end
 
-  def  self.insertionSort(ar, lo, hi)
-
+  def self.insertionSort(ar, lo, hi)
     (lo + 1..hi).each do |i|
       value = ar[i]
       j = i - 1

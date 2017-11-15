@@ -1,1 +1,1 @@
-require "quicksort_median_of_three"
+require 'quicksort_median_of_three'
