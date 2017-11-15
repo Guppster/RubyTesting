@@ -32,7 +32,7 @@ describe Sort do
 
   describe("insersorting") do
     let(:input) { [3, 6, 2, 3, 9, 7] }
-    let(:output) { subject.insertionSort(input, 0, input.length - 1) }
+    let(:output) { subject.insertion_sort(input, 0, input.length - 1) }
 
     it "sort" do
       expect(output).to eq [2,3,3,6,7,9]
