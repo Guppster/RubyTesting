@@ -33,12 +33,26 @@ class Sort
     i
   end
 
-  def self.choose_pivot(ar, left, right)
+  def self.choose_pivot(arr, left, right)
     center = (left + right) / 2
 
-    return left if (ar.fetch(left) - ar.fetch(right)) * (ar.fetch(center) - ar.fetch(left)) >= 0
+    if arr.fetch(left) < arr.fetch(center)
+      return arr.fetch(left) if arr.fetch(left) >= arr.fetch(right)
+      return arr.fetch(center) if arr.fetch(center) < arr.fetch(right)
+    else
+      return arr.fetch(left) if arr.fetch(left) < arr.fetch(right)
+      return arr.fetch(center) if arr.fetch(center) >= arr.fetch(right)
+    end
 
-    return right if (ar.fetch(right) - ar.fetch(left)) * (ar.fetch(center) - ar.fetch(right)) >= 0
+    arr.fetch(right)
+  end
+
+  def self.choose_pivot_old(ar, left, right)
+    center = (left + right) / 2
+
+    return left if (ar.fetch(left) - ar.fetch(right)) * (ar.fetch(center) - ar.fetch(left)) > 0
+
+    return right if (ar.fetch(right) - ar.fetch(left)) * (ar.fetch(center) - ar.fetch(right)) > 0
 
     center
   end

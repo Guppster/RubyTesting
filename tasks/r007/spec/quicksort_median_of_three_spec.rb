@@ -8,7 +8,7 @@ describe Sort do
     let(:output) {subject.choose_pivot(input, 0, input.length - 1)}
 
     it "choose pivot element" do
-      expect(output).to eq 0
+      expect(output).to eq 3
     end
   end
 
@@ -17,7 +17,7 @@ describe Sort do
     let(:output) {subject.choose_pivot(input, 1, input.length - 1)}
 
     it "choose pivot element" do
-      expect(output).to eq 3
+      expect(output).to eq 4
     end
   end
 
@@ -57,7 +57,7 @@ describe Sort do
 
   describe 'quicksort small' do
     let(:input) {[1,2]}
-    let(:output) { subject.quicksort(input, 5, input.length - 1) }
+    let(:output) { subject.quicksort(input, 0, input.length - 1) }
 
     it 'sort of array' do
     end
@@ -65,7 +65,15 @@ describe Sort do
 
   describe 'quicksort small reverse' do
     let(:input) {[2,1]}
-    let(:output) { subject.quicksort(input, 5, input.length - 1) }
+    let(:output) { subject.quicksort(input, 0, input.length - 1) }
+
+    it 'sort of array' do
+    end
+  end
+
+  describe 'quicksort single' do
+    let(:input) {[2]}
+    let(:output) { subject.quicksort(input, 0, input.length - 1) }
 
     it 'sort of array' do
     end
