@@ -1,4 +1,15 @@
+require 'quicksort_median_of_three'
 require 'simplecov'
+require 'timeout'
+
 SimpleCov.start
 
-require 'quicksort_median_of_three'
+RSpec.configure do |c|
+  c.around(:each) do |example|
+    Timeout::timeout(2) {
+      example.run
+    }
+  end
+end
+
+
