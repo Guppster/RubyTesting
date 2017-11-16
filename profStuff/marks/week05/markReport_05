@@ -1,3 +1,12 @@
 Mark_for_Weekly_05_out_of_10: in progress
 Mark_for_Practice_Review_05_out_of_10: in progress
 Is_there_sufficient_detail_in_rpt_commits_for_improvement_analysis: 
+So far your rpts read like a diary of what you have been doing.  The question
+is how does this information get used to analyze your development process
+to look for ways to improve it by putting things on a checklist.
+Particularly interesting is your entry of 30 Oct 20:15:27 where you say
+you have improved a lot on handling reek issues.  How do you know you are
+improving from the information you have been recording?  Are some reek 
+issues harder to fix than others?  Which ones?  You say only 4 left -- are
+they the hardest four or are you just going thru the list in order?  Have you
+figured out standard approaches to handling some of them? ...
