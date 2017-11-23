@@ -1,10 +1,10 @@
 require 'spec_helper'
+require 'nim'
+require 'fake_io'
 
 describe Nim do
-  subject { Nim }
-
   before(:each) do
-    @nim = Nim.new(Player.new, Player.new)
+    @nim = Nim.new(Player.new)
     # player is smart computer player by default
   end
 
@@ -28,17 +28,8 @@ describe Nim do
     expect(@nim.object.check_kernel_state([4, 3, 7])).to eq true
   end
 
-  it 'produces correct output for run' do
-    # Setup a 2 player game with player 2 going first
-    @nim.autoConfigBoard
-    @nim.player_choice = 0
-
-    while @nim.gameOver == false
-
-      if @nim.player_choice.zero?
-        expect { @nim.autoComputerMakeMove }.to output('Something Informative')
-          .to_stdout
-      end
-    end
+  it 'produces output to stdout when starting game' do
+    output = FakeIO.each_input(["5"]) { @nim.start_game }
+    output.should == "line1\nline2\nline3\n" "Welcome to NIM!\n1: [1, 3, 5, 7]\n2: [4, 3, 7]\nSelect board configuration (1 or 2): \nInvalid Selection! Select between 1 and 2: "
   end
 end

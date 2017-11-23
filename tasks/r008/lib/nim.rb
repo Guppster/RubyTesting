@@ -51,10 +51,10 @@ class Nim
     puts "1: [1, 3, 5, 7]"
     puts "2: [4, 3, 7]"
     print "Select board configuration (1 or 2): "
-    @board_choice = gets.chomp.to_i
+    @board_choice = gets.to_i
     while @board_choice != 1 && @board_choice != 2
       print "Invalid Selection! Select between 1 and 2: "
-      @board_choice = gets.chomp.to_i
+      @board_choice = gets.to_i
     end
     puts
     @object.displayMethods()
