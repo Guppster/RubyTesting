@@ -3,8 +3,8 @@ require 'spec_helper'
 describe Nim do
   subject { Nim }
 
-  before(:each) do 
-    @nim = Nim.new(Player.new)
+  before(:each) do
+    @nim = Nim.new(Player.new, Player.new)
     # player is smart computer player by default
   end
 
@@ -27,5 +27,18 @@ describe Nim do
   it 'kernal state true when checked with [4,3,7]' do
     expect(@nim.object.check_kernel_state([4, 3, 7])).to eq true
   end
-end
 
+  it 'produces correct output for run' do
+    # Setup a 2 player game with player 2 going first
+    @nim.autoConfigBoard
+    @nim.player_choice = 0
+
+    while @nim.gameOver == false
+
+      if @nim.player_choice.zero?
+        expect { @nim.autoComputerMakeMove }.to output('Something Informative')
+          .to_stdout
+      end
+    end
+  end
+end

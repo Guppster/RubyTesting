@@ -1,39 +1,53 @@
 #!/usr/bin/env ruby
-require "./nim.rb"
+require './nim.rb'
 
+# Good
 class NimPlayerTester
-	def initialize(game)
-		@game = game
-	end
-	def game
-		@game
-	end
+  def initialize(game)
+    @game = game
+  end
+
+  def game
+    @game
+  end
 end
 run = 0
+
 while run < 20
-	autoNim = NimPlayerTester.new(Nim.new(Player.new, Player.new))
-	autoNim.game.autoConfigBoard
-	autoNim.game.player_choice=(0) #dumb player starts first
-	while autoNim.game.gameOver == false
-		autoNim.game.autoComputerMakeMove()
-		if autoNim.game.player_choice == 0
-			puts "Dumb player took #{autoNim.game.sticks_taken} from row #{autoNim.game.row}"
-			puts
-		else
-			puts "Smart player took #{autoNim.game.sticks_taken} from row #{autoNim.game.row}"
-			puts
-		end
-		autoNim.game.checkGameOver()
-		if autoNim.game.gameOver == true
-			if autoNim.game.player_choice == 0 
-				puts "Dumb player wins!!!"
-			else
-				puts "Smart player wins!!!"
-			end
-		end
-		autoNim.game.player_choice=((autoNim.game.player_choice + 1) % 2)
-	end
-	run += 1
-	puts
+  auto_nim = NimPlayerTester.new(Nim.new(Player.new, Player.new))
+  auto_nim.game.autoConfigBoard
+  auto_nim.game.player_choice = 0 # dumb player starts first
+
+  while auto_nim.game.gameOver == false
+
+    auto_nim.game.autoComputerMakeMove
+
+    if auto_nim.game.player_choice.zero?
+      puts "Dumb player took #{auto_nim.game.sticks_taken} " \
+           "from row #{auto_nim.game.row}"
+    else
+      puts "Smart player took #{auto_nim.game.sticks_taken} " \
+           "from row #{auto_nim.game.row}"
+    end
+
+    puts
+    auto_nim.game.checkGameOver
+
+    if auto_nim.game.gameOver == true
+
+      if auto_nim.game.player_choice.zero?
+        puts 'Dumb player wins!!!'
+      else
+        puts 'Smart player wins!!!'
+      end
+
+    end
+
+    auto_nim.game.player_choice = ((auto_nim.game.player_choice + 1) % 2)
+  end
+
+  run += 1
+  puts
 end
-puts "Thanks for playing! Good bye!!!"
+
+puts 'Thanks for playing! Good bye!!!'
