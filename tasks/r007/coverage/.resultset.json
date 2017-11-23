@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/singh/Documents/Projects/CS4472/tasks/r007/lib/quicksort_median_of_three.rb": [
+      "/home/singh/Documents/Projects/gsingh95/tasks/r007/lib/quicksort_median_of_three.rb": [
         1,
         null,
         1,
@@ -62,12 +62,12 @@
         null,
         null
       ],
-      "/home/singh/Documents/Projects/CS4472/tasks/r007/lib/quicksort_median_of_three/version.rb": [
+      "/home/singh/Documents/Projects/gsingh95/tasks/r007/lib/quicksort_median_of_three/version.rb": [
         1,
         1,
         null
       ]
     },
-    "timestamp": 1510785830
+    "timestamp": 1511404248
   }
 }
