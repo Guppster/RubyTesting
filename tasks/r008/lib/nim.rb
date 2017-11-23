@@ -51,20 +51,21 @@ class Nim
     puts "1: [1, 3, 5, 7]"
     puts "2: [4, 3, 7]"
     print "Select board configuration (1 or 2): "
-    @board_choice = gets.to_i
+    @board_choice = gets.chomp.to_i
+    puts
     while @board_choice != 1 && @board_choice != 2
       print "Invalid Selection! Select between 1 and 2: "
-      @board_choice = gets.to_i
+      @board_choice = gets.chomp.to_i
     end
     puts
     @object.displayMethods()
     print "Select computer player (1 or 2): "
     @player_choice = gets.chomp.to_i
+    puts
     while @player_choice != 1 && @player_choice != 2
       print "Invalid Selection! Select between 1 and 2: "
       @player_choice = gets.chomp.to_i
     end
-    puts
   end
   def checkGameOver()
     sum = 0

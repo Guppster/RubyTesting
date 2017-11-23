@@ -12,8 +12,12 @@ class FakeIO
     @input.shift.to_s
   end
 
-  def puts(string)
-    @output << "#{string}\n"
+  def puts(*string)
+    if string.size == 0
+      @output << "\n"
+    else
+      @output << "#{string[0]}\n"
+    end
   end
 
   def write(string)

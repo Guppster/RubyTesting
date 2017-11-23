@@ -29,7 +29,15 @@ describe Nim do
   end
 
   it 'produces output to stdout when starting game' do
-    output = FakeIO.each_input(["5"]) { @nim.start_game }
-    output.should == "line1\nline2\nline3\n" "Welcome to NIM!\n1: [1, 3, 5, 7]\n2: [4, 3, 7]\nSelect board configuration (1 or 2): \nInvalid Selection! Select between 1 and 2: "
+    output = FakeIO.each_input(%w[5 2 6 1]) { @nim.start_game }
+    output.should == "Welcome to NIM!\n" \
+      "1: [1, 3, 5, 7]\n" \
+      "2: [4, 3, 7]\n" \
+      "Select board configuration (1 or 2): \n" \
+      "Invalid Selection! Select between 1 and 2: \n" \
+      "1: computer_player_smart\n" \
+      "2: computer_player_dumb\n" \
+      "Select computer player (1 or 2): \n" \
+      'Invalid Selection! Select between 1 and 2: '
   end
 end
