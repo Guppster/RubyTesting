@@ -1,0 +1,914 @@
+commit b1bdd2793170679d02db00b1ba1902ea23c7402a
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Nov 24 15:44:38 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit b8f30e3ddebdea5965002e9aca889b211a0b4e10
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Nov 23 16:47:36 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit e1859e2a59b5fde0533b6414ed4741f89df743b6
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Thu Nov 23 04:38:27 2017 -0500
+
+    RPT: r009 10
+    
+    Started Step 3, created todo step definitions for all steps in the
+    feature for GCD. Handled inputs correctly following webpage
+    instructions. Now i need to write the steps
+
+commit bb8f94f6008eb7e93b06d4c454df610fd0df32b8
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Thu Nov 23 04:25:52 2017 -0500
+
+    RPT: r009 10
+    
+    Finished step 2. Installed cucumber, created feature directories and
+    copied into it the file the prof provided. Next step on checklist is
+    created step definitions.
+
+commit 776c68813fcea662b8cae32e3f9d673d744bc10e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Thu Nov 23 04:15:19 2017 -0500
+
+    RPT: r009 5
+    
+    Copied the code into r009 directory and made checklist for steps.
+    Completed step 1.
+
+commit 66311e777abdf30539a0f8f6dd8a1524f6ce8287
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Thu Nov 23 04:08:56 2017 -0500
+
+    RPT: r008 30
+    
+    Finished Step 3. Got input and output testing working. Improved coverage
+    by including stdout output lines. Had to write some more additions to
+    the fakeIO class to get everything working. Learned about ruby shortcuts
+    like %w() for returning a word array. Learned ruby doesnt support
+    overloading methods. Now moving on to step 4 on checklist, achieving
+    higher coverage
+
+commit 3ddd6046ea3a7706a7f0a425b91c628d8bde98f2
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Thu Nov 23 03:31:14 2017 -0500
+
+    RPT: r008 30
+    
+    Still working on Step 3. Have improved coverage and learned a lot more
+    about testing I/O. Did more reading on the links provided and started
+    improving a fakeIO class i found online to serve as a helper for my IO
+    testing. Started by testing the start_game method in nim with it's intro
+    output messages
+
+commit 89fd1729f979fb271a526bdf342c3ecb8db8a89c
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Thu Nov 23 03:01:03 2017 -0500
+
+    RPT: r008 30
+    
+    Started Step 3 on the checklist. Generated a coverage statistic and as
+    the instructions described, not much was covered by the tests. Next I
+    researched using the provided links about how to test I/O and began
+    writing an example game with I/O handling. I used the NimPlayerTesting
+    script that was included in the project repo to base my test off of.
+    Test is not complete at this time but is in good progress. Also fixed
+    reek errors in all code provided including the NimPlayerTesting script
+
+commit f1343a5e9dffcdf84687cb9be1f2434f90d8b7e1
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 22 21:33:50 2017 -0500
+
+    RPT: r008 30
+    
+    Next thing on checklist is convert minitest to rspec. This commit starts
+    and finishes that task. Had to look at rspec documentation to learn
+    about how to use the before block in the specification. I needed to use
+    it to create a new nim instance for each test. It replaces the setup
+    method in the minitest version of the testing file
+
+commit 37957dd69921b5403d1cc05b4e1e284538a4d91e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 22 18:52:35 2017 -0500
+
+    RPT: r008 30
+    
+    Set up file structure and GemFiles to support simplecov, mutant, and rspec development environment.
+    Had issues setting up mutant but recalled notes i recorded from r007 and fixed the issues using them.
+
+commit d09a128d92d70ffcd83f61c71f3ab608c6edc2ac
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Nov 21 15:01:22 2017 -0500
+
+    RPT: r008 8
+    
+    Completed step 1 of cloning the nim data and structuring it into my project
+
+commit 7fb25f83c7af86433114088d161bf292a490031d
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Nov 21 14:10:00 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit 493358ec4893fd76e0fa4c0710adc15bd5279440
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sun Nov 19 18:23:37 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit 18877e8b92779128d55623e2c8bea6de7748c0fd
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Nov 16 18:59:53 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit 4f2490649fe9bbab73d5cd0d13878d61b63755ae
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Nov 16 17:09:55 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit d6b4a2a9d0d3d63b705c1c0e40a76e32a72b5964
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 15 17:45:10 2017 -0500
+
+    RPT: r007 21
+    
+    In order to eliminiate the last line that was causing alive mutations i
+    decided to try and optimaze the choose_pivot method by rewriting it in a
+    more explicit way. I did reduce my alive mutations to only 3 by doing
+    this but i broke one of my test cases. When the array to sort is big,
+    the sort is not correct. I ran out of time but next time i will fix this
+    test case and then have almost no alive mutations
+
+commit e1a93eb65b2ad1cd99dd05bf55938e82f84b014a
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 15 17:18:13 2017 -0500
+
+    RPT: r007 30
+    
+    Continuing the process of eliminating mutations. Have gotten them down
+    to 28 mutations and 92.7 percent coverage in the mutation test by
+    writing some new tests to cover edge cases and optimizing the sort code
+    to have less mutatable senarios.
+
+commit 358b9876994be4f86681a0620924c8ebba1dd667
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 15 12:02:26 2017 -0500
+
+    RPT: r007 30
+    
+    Following my checklist I continued running mutant and eliminating
+    mutations one by one. I am now at 41 alive and 92 percent coverage in
+    the mutation test.
+
+commit abe3b81c586b39983b44812c694b5921b4789eb1
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 15 09:40:46 2017 -0500
+
+    RPT: r007 19
+    
+    Using the checklist method I realized i needed to fix my mutation
+    infinate loop first. After googling the issue and then asking a
+    classmate I was able to learn about the timeout dependency and fixed the
+    infinate test case. Now I am able to get accurate mutation testing
+    results. I have 63 mutations left with 89 percent coverage during the
+    mutation test
+
+commit ef5159fa1654d1ac5a234ee62b8e6f4ff91cac4d
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 15 03:57:12 2017 -0500
+
+    RPT: r007 30
+    
+    Using the checklist method I went back to the task of achieving 100%
+    coverage. I made a new test case for the pivot method and with the
+    refactored code (for reek) I was able to get 100% coverage. Regardless
+    of this the mutation test is still freezing for me when all methods are
+    uncommented and there does not seem to be many resources troubleshooting
+    this issue online. I am now going to proceed with asking another student
+    if they encountered this problem to not waste any more time.
+
+commit b648f97f4fe49ac2f0bb73ecf3a5ca10cff8fc28
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 15 03:09:30 2017 -0500
+
+    RPT: r007 25
+    
+    Fixed all Reek issues. Found a solution to my problem with
+    insertion_sort method causing mutation testing to freeze. Worked around
+    it by commenting out insertion_sort and passing it's arguments to
+    quicksort. This shows me that the problem causing mutation testing to
+    break is inside insertion_sort and this will allow me to continue fixing
+    mutation bugs and discover the problem inside insertion_sort method.
+    Used the checklist method.
+
+commit 512af6103fa2de50e3afb3f1b6bc387732f8e0eb
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 15 02:26:41 2017 -0500
+
+    RPT: r007 30
+    
+    Continuting to improve results from mutation testing. Fixed an issue
+    with simplecov not being in one of my GemFiles which was causing all
+    mutations to have the same problem. Just ran into an issue with
+    mutation testing halting on the insertionSort method and never moving
+    forward. The mutation test reads 124/175 and never progresses. Currently
+    researching why this may be happening and looking for a fix.
+
+commit 6090dd00c0f61ca8a50d410a2a89e0a4b6689849
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Nov 15 17:10:03 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit 11535ecdc845973a4e900a863a0cabaa5aab8e3e
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Nov 9 16:05:46 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit 068bef871251e44257c71c4a25f9c4d630468bce
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 8 23:25:47 2017 -0500
+
+    RPT: r007 30
+    
+    Lots of progress on Step 4. I had to go back and follow the slideshow
+    here https://github.com/DonSchado/colognerb-on-mutant/blob/master/mutation_testing_slides.pdf
+    which is one of the links on the class wiki and using this information i
+    was able to finally get mutant to work successfully and produce
+    valuable results. Now I have mutant showing 97% coverage and most
+    mutations being "killed". It is showing a mutation and now i will
+    attempt to fix it
+
+commit eaeabbd7917c0c7fe04e2791d731b7097471a4be
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 8 22:05:12 2017 -0500
+
+    RPT: r007 30
+    
+    Working on Step 3 now. Spent some time reviewing mutant and reading over
+    eigth class slideshows/resources. Successfully installed mutant and ran
+    rspec and mutant from bundle exec. Initial run of mutant produced 666
+    mutations and coverage of 0.60%
+
+commit fd3dce6919dd701af35c91b7bcb1266f7ebbc5fa
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 8 21:27:43 2017 -0500
+
+    RPT: r007 30
+    
+    Step 2 Finished. Got coverage to 97.6%, only one line remains in which I
+    have decided to ask for assistance because after lots of attempts at
+    understanding the logic in the choose_pivot method i was unable to cover
+    that line with many new test cases introduced. Therefore, I will move on
+    to step 3 until i can get assistance on that topic
+
+commit 8dbd6c4d9413621bbffd7049233c2948c8dfc1d6
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 8 20:46:13 2017 -0500
+
+    RPT: r007 20
+    
+    Step Two partially completed. Finished making the tests run, then added
+    simplecov to the project and generated a report for coverage. Coverage
+    is not at 100 percent right now.
+
+commit 9076d8e773c5cc7d7bd6f2a521e9b2168992b377
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Nov 8 20:05:35 2017 -0500
+
+    RPT: r007 10
+    
+    Finished step one. Downloaded quicksort median of three
+    and extracted the code/test suite.
+
+commit 1999d19c63452b1aba89ad2d6dd480000f76f5ba
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Nov 8 18:54:43 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit b5cbd5209301a769ac3e2975e988d5ac83228c7e
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Nov 7 16:37:21 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit 752fefa553b620bc84ead1c01edec62e9dfb7fbf
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sun Nov 5 17:11:39 2017 -0500
+
+    updating practice framework and running summary.rb
+
+commit f89caaeb5ae1fc0274fcd9f0ce9773286dfde4db
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Nov 2 16:37:58 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 9585493e01e25413788eb2a95dbdf0cc2c8a821c
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 30 23:33:35 2017 -0400
+
+    RPT: r006 28
+    
+    Implemented the performance testing code using array_watcher as a test
+    inside the spec of heap_sort. Test is failing but I didn't have time to
+    diagnose the error. Next time i continue I will ask for help on this
+    topic as im not sure if im comparing the BIG O correctly using the array
+    operations counter.
+
+commit 7ef45c75008087d796a0d37b4b1ae2518886d0e1
+Merge: 61e00c0 56c2ce9
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 30 22:56:52 2017 -0400
+
+    Merge branch 'master' of ssh://repo.csd.uwo.ca:7999/cs4472_f2017/gsingh95
+
+commit 61e00c013081ac476ef48abb95aa30fcc2e28f1b
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 30 22:55:14 2017 -0400
+
+    RPT: r006 30
+    
+    Finished creating and testing ArrayWatcher. All tests pass and reek is
+    satisfied. Had to look up attr_reader / attr_accessor again because i
+    forgot about them.
+
+commit 56c2ce9f973e4acf2cdf3e5c65a708f1292fac6f
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Mon Oct 30 22:37:34 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit e5732ec512d9c092040c3b3aac774ac720d7b24e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 30 21:34:09 2017 -0400
+
+    RPT: r006 30
+    
+    Finished step 4 and started 5. Fixed remaining reek issues in the
+    heap_sort file. Described the array_watcher class and learned lots about
+    methods you can write for classes in ruby. Specifically researched
+    "self.{name}" methods and then methods with operator syntax. I think
+    these are really useful and can't wait to implement them
+
+commit 991e7065dc05b9f8705c6e44e644295fb0eb306b
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 30 20:15:27 2017 -0400
+
+    RPT: r006 30
+    
+    Almost finished step 4. Fixed most reek issues, only 4 reek issues
+    remain. I have improved a lot at satisfying reek, spliting stuff into
+    methods has gotten easier in Ruby.
+
+commit e0a3fc5fecb098499584eaa5d8b9c550eaa7d04b
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 30 19:42:30 2017 -0400
+
+    RPT: r006 25
+    
+    Finished Step 3 and got 100% coverage by writing two more tests. Learned
+    about the sort method on arrays and used it to clean up my tests.
+
+commit b6290e7edf4017361d5de440afe4004f5deb18d3
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 30 19:13:25 2017 -0400
+
+    RPT: r006 20
+    
+    Finished steps 1 and 2. Test for simple array sorting works good.
+
+commit 660493dae101ee56e3e4ea7abd8d523de2735048
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 30 18:41:30 2017 -0400
+
+    RPT: r005 30
+    
+    Reduced 12 reek errors down to 8 by removing utility functions and
+    rewriting parts of the code. Did not figure out how I can remove the
+    nested loops and therefore those reek errors still exist. Still
+    researching how the solution can work without the nested loops.
+
+commit 129079c4f614ffbbb46b3ed4322fe846cd4550d4
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sun Oct 29 19:41:23 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit e519608630a08219af7e8990367719bca71af70a
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Oct 26 18:56:05 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 4c7dbbaf408c689134c42097398446c6359a8275
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Oct 25 16:12:02 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit f1182b43cc6b0219fbc97f9c9d5f9cf6c86d53a5
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 24 21:50:52 2017 -0400
+
+    RPT: r005 30
+    
+    Fixed many reek issues. Discovered I could make grid an instance varaible and remove a method parameter which reduced a lot of reek errors. Kept tests passing. 12 reek errors remain
+
+commit f829608a316a13ac5ffcdea8586c62b684aa00b4
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 24 19:45:29 2017 -0400
+
+    RPT: r005 30
+    
+    In this iteration I downloaded the files and arranged them in the rspec format (spec directory). Then i had to create a spec_helper and require it in the spec test class. I also had to create a .rspec config file in the root of the project. Then in the spec_helper I enabled simple_cov and finally generated a coverage report as well as passing tests.
+
+commit a33786882c3f742af2bbd459735106109e8af946
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 24 19:11:37 2017 -0400
+
+    RPT: r004 30
+    
+    When i fixed all the reek issues a lot of rspec tests started failing. This was due to some of the code i had renamed and moved around. I resolved all the issues and got the rspec tests running again. I also had to change some varaible names in the spec file because they were referencing variables directly and those variables had improper naming, so i also had to rename them in the spec file. Next i fixed one of the deprecation warnings by removing a line from the spec_helper file.
+
+commit 0493b717fb4b1d3cb0c07b9aad0a72771872bbaf
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 24 18:40:28 2017 -0400
+
+    RPT: r004 30
+    
+    Changed accessor to reader, changed undescriptive method names to descriptive ones, and removed utiltiy functions.
+    These all fixed all but one reek issue. Next is finding out how to avoid a nil check in game.rb.
+
+commit 63dbb357666e149ebdea86ec41ffbfe4e58feb21
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 24 18:05:00 2017 -0400
+
+    RPT: r004 30
+    
+    Learned the way to do comparisons with new expect syntax and fixed all errors in tests. 0 failures and 0 errors in the tests now.
+    Then used the coverage report to find the line that was not being covered inside the game.rb file and wrote a test to cover when player2 wins thegame. Achieved 100% code coverage
+
+commit 4f924ec53d2620d8d80c58c46b6f57348b1d43b2
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 24 17:30:12 2017 -0400
+
+    RPT: r004 30
+    
+    Learned about the expect keyword and how to use it. Reverted an edit i made to the test files in my last commit and got them to work without having to edit the require statements. Learned about the .rspec config file in the root of the project. 24 failures right now using the new expect syntax, currently learning how to do comparisons with this syntax
+
+commit a79932cf7b50cf0cc1026ea26b91bdbdaf3de7d9
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Oct 24 14:00:34 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 7920815f9e8ab6e1aae864a5410d303b863c375e
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sun Oct 22 22:19:36 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit bda8862f6e995da51afe7a4958a92d5229db1ba0
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sat Oct 21 22:22:40 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit bb3c3ab6bd04d565dd2f3a5907f9a6b2e1451afa
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Oct 20 22:21:08 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit eb242bbeef2073f0fae963c5d2f703cf469ee75a
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Oct 19 15:35:49 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit b1cf8947f4e6baa94e18274f9138aae41c57e219
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Thu Oct 19 01:30:00 2017 -0400
+
+    RPT: r004 30
+    
+    I fixed the rspec problems, read the blog post and setup simplecov.
+    Then i began fixing reek problems.  Simplecov successfully found out
+    the coverage of the testing.
+
+commit 69789b3a230a04b9edc45c607540d6b8f5e9c8c8
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Thu Oct 19 00:41:47 2017 -0400
+
+    RPT: r003 30
+    
+    Finally got reek to accept my r003 code. I learned how to split up ruby code in chunks of 3 lines
+    and how to avoid feature envy by putting data into instance variables. (Even though we don't create an instance of this class).
+    Currently at 5 failures 0 errors.
+
+commit 1b32ba7e221ce988833e9c0f23c0bd0438a6568e
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Oct 18 22:44:34 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 9e735510c92602f6936c15a20aeb5af3b67c868f
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Oct 17 22:54:37 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 6ad88ac6998b5044fa86d20479777146696e99aa
+Merge: 705efe1 a0e308f
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 17 03:41:39 2017 +0000
+
+    Merge branch 'master' of ssh://repo.csd.uwo.ca:7999/cs4472_f2017/gsingh95
+
+commit 705efe10ea9dc81c9ff71e207d74d72ae422437a
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 17 03:35:17 2017 +0000
+
+    RPT r003 30
+    
+    Solved all but one code smell. Feature envy is a major problem in this
+    code problem because these are both utility functions without a class.
+    The tests should be changed to make a JustificationUtility and then
+    utilize it so we can make use of instance variables and avoid
+    referencing self more than the parameter variables. The result of
+    "fixing" the code smells to make reek happy in this problem actually
+    resulted in some very badly styled programming.
+
+commit c8f33e81abf7395f45141341140a853d4730bb1f
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 17 03:03:04 2017 +0000
+
+    RPT: r003 30
+    
+    Figured out how to handle remainders in justify_line() and began working
+    on justify(). 4 failures and 0 errors. Code smells still remain to be
+    fixed
+
+commit a0e308f2c9ff9a22a6862c810eb8f3b70948574d
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Mon Oct 16 22:40:09 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 39a489bdab3c598ff9336e6c9d5995b76c3e4a3d
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Tue Oct 17 01:39:25 2017 +0000
+
+    RPT: r003 30
+    
+    Found a way to split words, and find the exact number of spaces needed
+    in between words for the justify_line method. Currently challenged with
+    placing the remainder amount of spaces into the correct positon.
+    
+    9 failures no errors and code smells still exist
+
+commit e578318584e9a8453547e156bc8e18ad5e0b60f7
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Mon Oct 16 22:15:04 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 857dfc72c3631b9a1dd3adb11b74a98d47415c66
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Mon Oct 16 23:55:27 2017 +0000
+
+    RPT: r003 30
+    
+    Copied over the files, and created the justify method.
+    Solved the first test by using an nil check.
+    9 failures remain.
+    Planned out how to code the justify method
+
+commit a407db9e070c4dbe8a0763d72f1c39c7327b6c19
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Oct 13 21:19:25 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 27a59b976a7ecbed945e55641ec05f6cfb6e902a
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Oct 10 19:08:24 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 43ae4345f3b9ee5ae36075aabfb9e646c76884e1
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sun Oct 8 16:09:20 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 3dd412104a715611d1e3949372e8605bf96c414e
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Oct 5 14:58:42 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit b91189d7f9ee186e2986aaedc12e3393a6453645
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Oct 4 22:23:04 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 6ed2f2d8e9a8771b6c3b09e54b0518599ef6c7b7
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Oct 4 18:32:17 2017 -0400
+
+    RPT: r002 30
+    
+    All test cases passing. Had to inverse discount numbers to get the
+    correct value for subtracting from the original cost. Spent some time
+    satisfying all reek requirements
+
+commit f4ae19b5907b77ceadcaf3b3e3cb90a80ece1854
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Oct 4 17:45:30 2017 -0400
+
+    RPT: r002 30
+    
+    Currently at 2 failures 0 errors. Figured out how to evaluate deals
+    based on item and how to calculate final price. Still having issues with
+    2 tests both use AAA as receipt. Its an edge case error that should be
+    easy to solve
+
+commit dbcdb9396daa223f59c8e77fccc2da9a627e6cae
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Oct 4 17:10:00 2017 -0400
+
+    RPT: r002 30
+    
+    Learned about the inject functionality on objects and tried using that
+    to sum up my items in receipt but ran into the issue of not knowing
+    how many of each item i have sold Therefore had to change the receipt
+    into an Hash. Learned more about Structs and used one to make Discount
+    object with an evaluate function
+
+commit c7e52ee79834f15c74cadc5b3502262a8a0fc557
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Oct 4 16:30:22 2017 -0400
+
+    RPT: r002 20
+    
+    Fixed all reek warnings and implemented sale.
+    Storted implementing total functionality.
+    Improved Item data struct
+
+commit 3c84eb692bc8105c415b05df96dd2a3937bf50c9
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Oct 4 16:10:00 2017 -0400
+
+    RPT: r002 30
+    
+    Still have two failures from unimplemented total and sale but I have now
+    created the object structures required to support the functionality they
+    need. I created a Store class that contains an array of Item objects
+    each with a discount struct.
+
+commit a0daad1c84ba0d448e67729db04aae83c437a138
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Oct 4 15:26:30 2017 -0400
+
+    RPT: r002 10
+    
+    Solved errors and achieved two failures. Need to implement total and
+    scan to solve failures. Satisfied reek requirements
+
+commit efab96924ec99e54d6f9f373d5ed5cc20184e142
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Oct 4 14:01:49 2017 -0400
+
+    RPT: r002 30
+    
+    I am at 2 errors. Working on undefined method total.
+    Figured out how to create a constructor and a constant to eliminate two
+    previous errors.
+
+commit 94b9f77092ad3f18a55c36ec393b665e953fb7b2
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Oct 3 18:42:38 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit e87116c7277b5b85b8d41170327e1da71b56ed26
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Oct 3 14:59:23 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 04401840a31f9b7674ede134c8c361ccc07cb470
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sun Oct 1 19:13:55 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit ece9c67b1e177d7c4eaa12d87c3608784c22cd48
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sat Sep 30 16:30:42 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 01bcb351728197a34f3c1014a29734b01e6147fd
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Sep 29 16:37:36 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 8a701965648edaa477be5f61ad227f1245784f51
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Thu Sep 28 14:38:40 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 1bc01bde9b060e57a9a8ce12007fbe8115f94375
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 27 22:15:34 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit b8b5c51381dbdf437fb93ed93d20f5415f9f4f9e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 21:35:34 2017 -0400
+
+    RPT: r001 12
+    
+    Fixed code smells but one about the camel case varible names still
+    exists because the instructions also use a camel case name for the
+    timeInterval method. Found and fixed a bug with the duration counting
+    part of quietprinter
+
+commit 249f934f1448100f549b1eb24028b81d5a529308
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 21:17:28 2017 -0400
+
+    RPT: r001 30
+    
+    Finished functional part of step 6. Still need to correct reek results.
+    Experimented with different ways of obtaining duration in
+    QuietPrintMethod and found a clean way that works. I am finding instance
+    varible notation in Ruby very confusing. '@' is annoying.
+
+commit 3644bfef87b9d4086e7fe1e6ebf2087aa4c6bcb8
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 20:43:48 2017 -0400
+
+    RPT: r001 30
+    
+    Finished step 4 and 5 by implementing QuietPrintMethod and fixing code smells.
+    Looked up how to make interfaces in Ruby because there should be one
+    describing QuietPrintMethod and PrintMethod because they both
+    provide print functionality but to my surprise ruby
+    doesn't even support interfaces.
+
+commit 851b86d5108aaab0637054e69c5bed93a5eee05e
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 20:10:54 2017 -0400
+
+    RPT: r001 21
+    
+    Finished steps two and three. Used reek to repair all the code
+    smells. I struggled to come up with variable names that reek found
+    acceptable but eventually found some.
+
+commit f4fc2961dcc130944d3335a53c6d80c287487075
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 19:48:37 2017 -0400
+
+    RPT: r001 30
+    
+    Solves step one. One challenge I ran into was that the assertion was
+    failing because the recorded time was slighty larger than 120 seconds
+    and i solved this by rounding the result
+
+commit d09f3218addd4414514f4f2482133fa81742335b
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 17:58:02 2017 -0400
+
+    RPT: r001 30
+    
+    Starting this task I began looking for the countdown file that
+    was specified in the r001_description. I was unable to find the file in
+    the folder specified so I asked a classmate for the location. After
+    retrieving the hidden file from the bin directory I installed the
+    minitest gem, made countdown into a method and began writing a test for
+    the method.
+
+commit 67517392b747bc419ea2f41f70995055e70fb045
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 27 17:09:18 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 740e9d33f4ea6ec234f7d04ca46dd79e504dd00c
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 16:51:13 2017 -0400
+
+    RPT: i002 11
+    
+    Installed RubyGem from rubygems.org and bundler from bundler.io without
+    any problems.
+
+commit 55a061a0dbfd1ea96e5582a01e88984b851d3475
+Author: Gurpreet Singh <gurpreet@mailfence.com>
+Date:   Wed Sep 27 16:00:26 2017 -0400
+
+    RPT: i001 22
+    
+    Installed Ruby and setup Bitbucket to be able to pull from repo.
+    Spent a few minutes looking into rbenv and rvm but decided to just
+    install Ruby directly from my package manager instead.
+
+commit 51dc16f764986a89d854f5ab03fc32b050ce1441
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 27 14:42:13 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 52b2f1e8719cc4e281341e9e9d5de8c7854cabb7
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Sep 26 16:30:52 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 657b2e10531e7427eb1f4eb82b30784a7efe67d7
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Mon Sep 25 22:28:43 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit f129377a784f1e60488a0a3cbde5bf733317d9f6
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sun Sep 24 21:06:27 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 7e03fccc70b3f95319d1201fd626e5e6c9f4a4c4
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Sat Sep 23 21:31:55 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 459d5eea6010b52ace3c82b539dc5413e3e2df5b
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Sep 22 22:28:25 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 4af399f403277148997086756aba5f2c32f2fd32
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Sep 22 17:21:03 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 00823733ef89db650129458361bc57ba482d065c
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Fri Sep 22 17:19:31 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit b801cf3c7d4ec30803764287e9ab0be68d099a39
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 20 22:06:09 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 0e4473de9409ce7439574c0cafe803a24e221185
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 20 22:04:25 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 8a84a881f3f7c2c3cb1e41922c7719e567c3e54c
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 20 19:35:14 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit b4ffd4413f693b0388f495fa22b2d304bf24f912
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Wed Sep 20 13:46:29 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 677fce43de2c13483e9073d343e5c1dea75eea44
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Sep 19 17:03:12 2017 -0400
+
+    updating practice framework and running summary.rb
+
+commit 993ff6b482b202560b07c5358919229dbf70dbe1
+Author: Bob Webber <webber@csd.uwo.ca>
+Date:   Tue Sep 19 17:00:04 2017 -0400
+
+    updating practice framework and running summary.rb
