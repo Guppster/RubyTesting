@@ -15,5 +15,3 @@ def gcd(v1, v2)
     gcd(v1, (v2 - v1) >> 1)
   end
 end
-
-puts gcd(11_455, 18_486)
