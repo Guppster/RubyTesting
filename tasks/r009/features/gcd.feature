@@ -1,26 +1,15 @@
 Feature: examples of usage of GCD
 
-    Scenario:
+    Scenario Outline:
         Given that I am calculating GCD
-        When I input the numbers 1 and 2
-        Then I get back 1
+        When I input the numbers <firstNum> and <secondNum>
+        Then I get back <output>
 
-    Scenario:
-        Given that I am calculating GCD
-        When I input the numbers 6 and 8
-        Then I get back 2
+        Examples:
+          | firstNum | secondNum | output |
+          | 1 | 2 | 1 |
+          | 6 | 8 | 2 |
+          | 100 | 101 | 1 |
+          | 12 | 20 | 4 |
+          | 12 | 60 | 12 |
 
-    Scenario:
-        Given that I am calculating GCD
-        When I input the numbers 100 and 101
-        Then I get back 1
-
-    Scenario:
-        Given that I am calculating GCD
-        When I input the numbers 12 and 20
-        Then I get back 4
-
-    Scenario:
-        Given that I am calculating GCD
-        When I input the numbers 12 and 60
-        Then I get back 12
