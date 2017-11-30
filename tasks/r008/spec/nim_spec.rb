@@ -40,4 +40,14 @@ describe Nim do
       "Select computer player (1 or 2): \n" \
       'Invalid Selection! Select between 1 and 2: '
   end
+
+  it 'produces output to stdout when human player makes move' do
+    @nim.autoConfigBoard
+    output = FakeIO.each_input(%w[0 1 2 0 1]) { @nim.humanMakeMove }
+    output.should == "Select the row(1-4): " \
+      "Invalid row. Select valid row: " \
+      "Select the number of sticks (1): " \
+      "Invalid number of sticks. Select a valid number of sticks (1-1): " \
+      "Invalid number of sticks. Select a valid number of sticks (1-1): \n"
+  end
 end
