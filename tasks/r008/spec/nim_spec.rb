@@ -51,6 +51,12 @@ describe Nim do
       "Invalid number of sticks. Select a valid number of sticks (1-1): \n"
   end
 
+  it 'produces output to stdout when human player makes move' do
+    @nim.autoConfigBoard
+    output = FakeIO.each_input(%w[]) { @nim.display } 
+    output.should == "Row 1: X\nRow 2: XXX\nRow 3: XXXXX\nRow 4: XXXXXXX\n"
+  end
+
   it 'returns the correct values from getters' do
     @nim = Nim.new(Player.new, Player.new)
     @nim.autoConfigBoard
@@ -62,6 +68,21 @@ describe Nim do
 
     expect(@nim.sticks_taken).to be_truthy
     expect(@nim.row).to be_truthy
+    expect(@nim.board_choice).to be_truthy
+    expect(@nim.player_choice).to be_truthy
+
+  end
+
+  it 'returns the correct values from getters' do
+    @nim = Nim.new(Player.new, Player.new)
+    @nim.autoConfigBoard
+
+    @nim.player_choice=1
+    expect(@nim.player_choice).to eq 1
+
+    @nim.autoComputerMakeMove
+
+    expect(@nim.sticks_taken).to be_truthy
     expect(@nim.board_choice).to be_truthy
     expect(@nim.player_choice).to be_truthy
 
