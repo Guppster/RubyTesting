@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-29T20:55:34-05:00">2017-11-29T20:55:34-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-30T02:08:17-05:00">2017-11-30T02:08:17-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">69.37%</span></span>
+    (<span class="covered_percent"><span class="yellow">80.6%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.33
+         2.5
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>3</b> files in total.
-    <b>222</b> relevant lines. 
-    <span class="green"><b>154</b> lines covered</span> and
-    <span class="red"><b>68</b> lines missed </span>
+    <b>232</b> relevant lines. 
+    <span class="green"><b>187</b> lines covered</span> and
+    <span class="red"><b>45</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#36397559ccd0187617b4d8198f319a24262f90f6" class="src_link" title="lib/nim.rb">lib/nim.rb</a></td>
-        <td class="red strong">61.8 %</td>
+        <td class="red strong">74.72 %</td>
         <td>264</td>
         <td>178</td>
-        <td>110</td>
-        <td>68</td>
-        <td>2.4</td>
+        <td>133</td>
+        <td>45</td>
+        <td>2.7</td>
       </tr>
       
       <tr>
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#046cb45006589dc86702cd72370b4b2ba1c44c5d" class="src_link" title="spec/nim_spec.rb">spec/nim_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>53</td>
-        <td>23</td>
-        <td>23</td>
+        <td>69</td>
+        <td>33</td>
+        <td>33</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.2</td>
       </tr>
       
     </tbody>
@@ -99,11 +99,11 @@
         <div class="source_table" id="36397559ccd0187617b4d8198f319a24262f90f6">
   <div class="header">
     <h3>lib/nim.rb</h3>
-    <h4><span class="red">61.8 %</span> covered</h4>
+    <h4><span class="red">74.72 %</span> covered</h4>
     <div>
       <b>178</b> relevant lines. 
-      <span class="green"><b>110</b> lines covered</span> and
-      <span class="red"><b>68</b> lines missed.</span>
+      <span class="green"><b>133</b> lines covered</span> and
+      <span class="red"><b>45</b> lines missed.</span>
     </div>
   </div>
   
@@ -158,32 +158,32 @@
           <code class="ruby">    #check for number of arguments; essentially overriding constructor</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="9">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="9">
+          <span class="hits">8</span>
           
           <code class="ruby">    if args.size() == 1</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="10">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="10">
+          <span class="hits">7</span>
           
           <code class="ruby">      @object = args[0]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
           <code class="ruby">    elsif args.size() == 2</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
           <code class="ruby">      @dumb_player = args[0]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
           
           <code class="ruby">      @smart_player = args[1]</code>
         </li>
@@ -206,62 +206,62 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="17">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="17">
+          <span class="hits">8</span>
           
           <code class="ruby">    @board_choice = 1 # by default</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="18">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="18">
+          <span class="hits">8</span>
           
           <code class="ruby">    @player_choice = 1 # by default</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="19">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="19">
+          <span class="hits">8</span>
           
           <code class="ruby">    @config1 = [1, 3, 5 ,7]</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="20">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="20">
+          <span class="hits">8</span>
           
           <code class="ruby">    @config2 = [4, 3, 7]</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="21">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="21">
+          <span class="hits">8</span>
           
           <code class="ruby">    @row_num</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="22">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="22">
+          <span class="hits">8</span>
           
           <code class="ruby">    @num_sticks</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="23">
+          <span class="hits">8</span>
           
           <code class="ruby">    @board=[]</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="24">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="24">
+          <span class="hits">8</span>
           
           <code class="ruby">    @gameOver = false</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="25">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="25">
+          <span class="hits">8</span>
           
           <code class="ruby">    @sticks_taken</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="26">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="26">
+          <span class="hits">8</span>
           
           <code class="ruby">    @row</code>
         </li>
@@ -314,8 +314,8 @@
           <code class="ruby">  def sticks_taken</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="35">
-          
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
           
           <code class="ruby">    @sticks_taken</code>
         </li>
@@ -332,8 +332,8 @@
           <code class="ruby">  def row</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
-          
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
           
           <code class="ruby">    @row</code>
         </li>
@@ -350,8 +350,8 @@
           <code class="ruby">  def board_choice</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
-          
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
           <code class="ruby">    @board_choice</code>
         </li>
@@ -368,8 +368,8 @@
           <code class="ruby">  def player_choice</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="2" data-linenumber="44">
+          <span class="hits">2</span>
           
           <code class="ruby">    @player_choice</code>
         </li>
@@ -386,8 +386,8 @@
           <code class="ruby">  def player_choice=(pc)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
-          
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
           
           <code class="ruby">    @player_choice = pc</code>
         </li>
@@ -638,8 +638,8 @@
           <code class="ruby">  def autoComputerMakeMove()</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="89">
-          
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
           
           <code class="ruby">    if @player_choice == 1</code>
         </li>
@@ -668,20 +668,20 @@
           <code class="ruby">    else	</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="94">
-          
+        <li class="covered" data-hits="1" data-linenumber="94">
+          <span class="hits">1</span>
           
           <code class="ruby">      @board = @dumb_player.computer_player_dumb(@board)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="95">
-          
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
           
           <code class="ruby">      @sticks_taken = @dumb_player.sticks_taken</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="96">
-          
+        <li class="covered" data-hits="1" data-linenumber="96">
+          <span class="hits">1</span>
           
           <code class="ruby">      @row = @dumb_player.row</code>
         </li>
@@ -752,8 +752,8 @@
           <code class="ruby">  def autoConfigBoard</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="108">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="108">
+          <span class="hits">2</span>
           
           <code class="ruby">    @board = @config1</code>
         </li>
@@ -1046,26 +1046,26 @@
           <code class="ruby">  def initialize()</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="157">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="157">
+          <span class="hits">9</span>
           
           <code class="ruby">    @parity = []</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="158">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="158">
+          <span class="hits">9</span>
           
           <code class="ruby">    @binary_board = []</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="159">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="159">
+          <span class="hits">9</span>
           
           <code class="ruby">    @sticks_taken</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="160">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="160">
+          <span class="hits">9</span>
           
           <code class="ruby">    @row</code>
         </li>
@@ -1082,8 +1082,8 @@
           <code class="ruby">  def sticks_taken</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="163">
-          
+        <li class="covered" data-hits="1" data-linenumber="163">
+          <span class="hits">1</span>
           
           <code class="ruby">    @sticks_taken</code>
         </li>
@@ -1100,8 +1100,8 @@
           <code class="ruby">  def row</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="166">
-          
+        <li class="covered" data-hits="1" data-linenumber="166">
+          <span class="hits">1</span>
           
           <code class="ruby">    @row</code>
         </li>
@@ -1250,14 +1250,14 @@
           <code class="ruby">  def computer_player_dumb(board)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="191">
-          
+        <li class="covered" data-hits="1" data-linenumber="191">
+          <span class="hits">1</span>
           
           <code class="ruby">    row = rand(0..board.size-1)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="192">
-          
+        <li class="covered" data-hits="1" data-linenumber="192">
+          <span class="hits">1</span>
           
           <code class="ruby">    while board.at(row) == 0</code>
         </li>
@@ -1274,44 +1274,44 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="195">
-          
+        <li class="covered" data-hits="1" data-linenumber="195">
+          <span class="hits">1</span>
           
           <code class="ruby">    num_sticks = rand(1..board.at(row))</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="196">
-          
+        <li class="covered" data-hits="1" data-linenumber="196">
+          <span class="hits">1</span>
           
           <code class="ruby">    @row = row + 1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="197">
-          
+        <li class="covered" data-hits="1" data-linenumber="197">
+          <span class="hits">1</span>
           
           <code class="ruby">    @sticks_taken = num_sticks</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="198">
-          
+        <li class="covered" data-hits="1" data-linenumber="198">
+          <span class="hits">1</span>
           
           <code class="ruby">    num_sticks = board.at(row) - num_sticks</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="199">
-          
+        <li class="covered" data-hits="1" data-linenumber="199">
+          <span class="hits">1</span>
           
           <code class="ruby">    board.delete_at(row)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="200">
-          
+        <li class="covered" data-hits="1" data-linenumber="200">
+          <span class="hits">1</span>
           
           <code class="ruby">    board.insert(row, num_sticks)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="201">
-          
+        <li class="covered" data-hits="1" data-linenumber="201">
+          <span class="hits">1</span>
           
           <code class="ruby">    return board</code>
         </li>
@@ -1957,8 +1957,8 @@
     <h3>spec/nim_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>23</b> relevant lines. 
-      <span class="green"><b>23</b> lines covered</span> and
+      <b>33</b> relevant lines. 
+      <span class="green"><b>33</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2002,8 +2002,8 @@
           <code class="ruby">  before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="7">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
           
           <code class="ruby">    @nim = Nim.new(Player.new)</code>
         </li>
@@ -2245,25 +2245,25 @@
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">    output.should == &quot;Select the row(1-4): &quot; \</code>
+          <code class="ruby">    output.should == &#39;Select the row(1-4): &#39; \</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">      &quot;Invalid row. Select valid row: &quot; \</code>
+          <code class="ruby">      &#39;Invalid row. Select valid row: &#39; \</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">      &quot;Select the number of sticks (1): &quot; \</code>
+          <code class="ruby">      &#39;Select the number of sticks (1): &#39; \</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">      &quot;Invalid number of sticks. Select a valid number of sticks (1-1): &quot; \</code>
+          <code class="ruby">      &#39;Invalid number of sticks. Select a valid number of sticks (1-1): &#39; \</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
@@ -2279,6 +2279,102 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns the correct values from getters&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @nim = Nim.new(Player.new, Player.new)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @nim.autoConfigBoard</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @nim.player_choice=0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@nim.player_choice).to eq 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @nim.autoComputerMakeMove</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@nim.sticks_taken).to be_truthy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@nim.row).to be_truthy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@nim.board_choice).to be_truthy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@nim.player_choice).to be_truthy</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby">end</code>
