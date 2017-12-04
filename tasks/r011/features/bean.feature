@@ -2,8 +2,8 @@ Feature: Examples of beancounting usage
 
     Scenario Outline:
         Given: Beans <beans>
-        When: users <users> guess <guesses>
-        Then: user <user> gets <reward>
+        When: guesses <guesses> are processed
+        Then: rewards are equal to <rewards>
 
         Examples:
-            | beans | users | guesses | user | reward |
+            | beans | guesses | rewards |
