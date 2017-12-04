@@ -1,0 +1,40 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/singh/Documents/Projects/gsingh95/tasks/r011/beancounting.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/singh/Documents/Projects/gsingh95/tasks/r011/spec/beancounting_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1512400289
+  }
+}

@@ -1,1 +1,1 @@
-require_relative '../../beancounting.rb'
+require_relative '../../beancounting'

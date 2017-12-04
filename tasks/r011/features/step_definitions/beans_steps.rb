@@ -1,11 +1,11 @@
-Given('Beans {beans}') do |beans|
-  @contest = BeanCounting.new(beans)
+Given('Beans {string}') do |string|
+  @contest = BeanCounting.new(string)
 end
 
-When('guesses {guesses} are processed') do |guesses|
-  @contest.submitGuesses(guesses)
+When('guesses {string} are processed') do |string|
+  @contest.submit_guesses(string)
 end
 
-Then('rewards are equal to {rewards}') do |rewards|
-  expect(@contest.getRewardList).to eq rewards
+Then('rewards are equal to {string}') do |string|
+  expect(@contest.get_reward_list).to eq string
 end

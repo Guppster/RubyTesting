@@ -1,14 +1,18 @@
-class BeanCountincg
+class BeanCounting
   def initialize(beans)
     @rawBeans = beans
   end
 
-  def submitGuesses(guesses)
+  def count_beans(type)
+    @rawBeans.count(type)
   end
 
-  def getReward(player)
+  def submit_guesses(guesses)
   end
 
-  def getRewardList
+  def get_reward(player)
+  end
+
+  def get_reward_list
   end
 end
