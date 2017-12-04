@@ -2,9 +2,12 @@
   "RSpec": {
     "coverage": {
       "/home/singh/Documents/Projects/gsingh95/tasks/r011/beancounting.rb": [
+        null,
         1,
         1,
-        1,
+        2,
+        2,
+        2,
         null,
         null,
         1,
@@ -12,9 +15,25 @@
         null,
         null,
         1,
+        1,
+        null,
+        null,
+        5,
+        4,
+        4,
         null,
         null,
         1,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
         null,
         null,
         1,
@@ -25,16 +44,22 @@
         1,
         null,
         1,
+        1,
+        1,
+        null,
+        1,
+        null,
         null,
         1,
         1,
         null,
         1,
         null,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1512400289
+    "timestamp": 1512401885
   }
 }
