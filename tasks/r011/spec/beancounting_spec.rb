@@ -18,7 +18,7 @@ describe BeanCounting do
   it 'returns correct players hash after submitting guesses' do
     @contest = BeanCounting.new('abcda')
 
-    result = { "A" => Player.new(1, 2), "B" => Player.new(1, 0), "C" => Player.new(0, 1) }
+    result = { "A" => Player.new(1, 1), "B" => Player.new(1, 0), "C" => Player.new(0, 1) }
 
     guesses = "A a:2,c:2\nB a:1\nC d:1\n"
     @contest.submit_guesses(guesses)
