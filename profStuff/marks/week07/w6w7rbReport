@@ -1,0 +1,93 @@
+1c1
+< total time reported is: 1009.0
+---
+> total time reported is: 1194.0
+390a391,478
+> 
+> commit 512af6103fa2de50e3afb3f1b6bc387732f8e0eb
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 15 02:26:41 2017 -0500
+> 
+>     RPT: r007 30
+>     
+>     Continuting to improve results from mutation testing. Fixed an issue
+>     with simplecov not being in one of my GemFiles which was causing all
+>     mutations to have the same problem. Just ran into an issue with
+>     mutation testing halting on the insertionSort method and never moving
+>     forward. The mutation test reads 124/175 and never progresses. Currently
+>     researching why this may be happening and looking for a fix.
+> 
+> commit b648f97f4fe49ac2f0bb73ecf3a5ca10cff8fc28
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 15 03:09:30 2017 -0500
+> 
+>     RPT: r007 25
+>     
+>     Fixed all Reek issues. Found a solution to my problem with
+>     insertion_sort method causing mutation testing to freeze. Worked around
+>     it by commenting out insertion_sort and passing it's arguments to
+>     quicksort. This shows me that the problem causing mutation testing to
+>     break is inside insertion_sort and this will allow me to continue fixing
+>     mutation bugs and discover the problem inside insertion_sort method.
+>     Used the checklist method.
+> 
+> commit ef5159fa1654d1ac5a234ee62b8e6f4ff91cac4d
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 15 03:57:12 2017 -0500
+> 
+>     RPT: r007 30
+>     
+>     Using the checklist method I went back to the task of achieving 100%
+>     coverage. I made a new test case for the pivot method and with the
+>     refactored code (for reek) I was able to get 100% coverage. Regardless
+>     of this the mutation test is still freezing for me when all methods are
+>     uncommented and there does not seem to be many resources troubleshooting
+>     this issue online. I am now going to proceed with asking another student
+>     if they encountered this problem to not waste any more time.
+> 
+> commit abe3b81c586b39983b44812c694b5921b4789eb1
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 15 09:40:46 2017 -0500
+> 
+>     RPT: r007 19
+>     
+>     Using the checklist method I realized i needed to fix my mutation
+>     infinate loop first. After googling the issue and then asking a
+>     classmate I was able to learn about the timeout dependency and fixed the
+>     infinate test case. Now I am able to get accurate mutation testing
+>     results. I have 63 mutations left with 89 percent coverage during the
+>     mutation test
+> 
+> commit 358b9876994be4f86681a0620924c8ebba1dd667
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 15 12:02:26 2017 -0500
+> 
+>     RPT: r007 30
+>     
+>     Following my checklist I continued running mutant and eliminating
+>     mutations one by one. I am now at 41 alive and 92 percent coverage in
+>     the mutation test.
+> 
+> commit e1a93eb65b2ad1cd99dd05bf55938e82f84b014a
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 15 17:18:13 2017 -0500
+> 
+>     RPT: r007 30
+>     
+>     Continuing the process of eliminating mutations. Have gotten them down
+>     to 28 mutations and 92.7 percent coverage in the mutation test by
+>     writing some new tests to cover edge cases and optimizing the sort code
+>     to have less mutatable senarios.
+> 
+> commit d6b4a2a9d0d3d63b705c1c0e40a76e32a72b5964
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 15 17:45:10 2017 -0500
+> 
+>     RPT: r007 21
+>     
+>     In order to eliminiate the last line that was causing alive mutations i
+>     decided to try and optimaze the choose_pivot method by rewriting it in a
+>     more explicit way. I did reduce my alive mutations to only 3 by doing
+>     this but i broke one of my test cases. When the array to sort is big,
+>     the sort is not correct. I ran out of time but next time i will fix this
+>     test case and then have almost no alive mutations

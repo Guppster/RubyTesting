@@ -1,0 +1,72 @@
+1c1
+< total time reported is: 1562.0
+---
+> total time reported is: 1757.0
+670a671,737
+> 
+> commit 6e2952dd1e8969f54ae816dcf82909cb2552969c
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Dec 4 09:03:35 2017 -0500
+> 
+>     RPT: r011 15
+>     
+>     Finished step 1. Created a cucumber structure and made a feature file
+>     for bean counting
+> 
+> commit 6728178e8650c464988e4c8f3c8b90f10f819355
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Dec 4 09:43:24 2017 -0500
+> 
+>     RPT: r011 30
+>     
+>     Finished step 2. Created empty methods for beancounting class and
+>     created step definitions based off of those methods.
+> 
+> commit b82e445d6793d55a550749664d8c6052694ea81f
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Dec 4 10:20:00 2017 -0500
+> 
+>     RPT: r011 30
+>     
+>     Progress on step number 3 of checklist for r011. Created rspec structure
+>     with simplecov and created a test. Cleaned up all reek issues on all
+>     files currently present in directory. Working on implementation now
+> 
+> commit 8a2dbfc0cc4f79bac83400901a726c623c26222b
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Dec 4 12:39:55 2017 -0500
+> 
+>     RPT: r011 30
+>     
+>     Progress on Step 3 of checklist for r011. Moved further in
+>     implementation. Now i know how many of each bean there are in my
+>     program and can accept guesses. All that remains is result processing.
+> 
+> commit c7d5b8de0dcb3848ef83e0a073ee608c2d9a9cb0
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Dec 4 13:42:22 2017 -0500
+> 
+>     RPT: r011 30
+>     
+>     More progress on step 3 of r011 checklist. Finished determining how
+>     many one_offs and right_ons each player has. Checked for reek issues and
+>     fixed them. Wrote tests for all methods I wrote.
+> 
+> commit ed58cccc2842aad1ee6e53beafcab7cd29be6ec8
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Dec 4 14:20:00 2017 -0500
+> 
+>     RPT: r011 30
+>     
+>     Completed Step 3 off checklist. Got the correct result from doing the
+>     calculation for score on my compiled list of one_off & right_on scores.
+> 
+> commit 3632ecf7b05571bfe1085d9e8cb3da0867d4821f
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Mon Dec 4 15:22:16 2017 -0500
+> 
+>     RPT: w001 30
+>     
+>     Finished step 1 of w001 task's checklist. Ran into small issues
+>     regarding c header files missing from my linux system but i already knew
+>     how to resolve those and managed to do it quickly.

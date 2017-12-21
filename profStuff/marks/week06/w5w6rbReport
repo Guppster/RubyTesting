@@ -1,0 +1,61 @@
+1c1
+< total time reported is: 889.0
+---
+> total time reported is: 1009.0
+334a335,390
+> 
+> commit 9076d8e773c5cc7d7bd6f2a521e9b2168992b377
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 8 20:05:35 2017 -0500
+> 
+>     RPT: r007 10
+>     
+>     Finished step one. Downloaded quicksort median of three
+>     and extracted the code/test suite.
+> 
+> commit 8dbd6c4d9413621bbffd7049233c2948c8dfc1d6
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 8 20:46:13 2017 -0500
+> 
+>     RPT: r007 20
+>     
+>     Step Two partially completed. Finished making the tests run, then added
+>     simplecov to the project and generated a report for coverage. Coverage
+>     is not at 100 percent right now.
+> 
+> commit fd3dce6919dd701af35c91b7bcb1266f7ebbc5fa
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 8 21:27:43 2017 -0500
+> 
+>     RPT: r007 30
+>     
+>     Step 2 Finished. Got coverage to 97.6%, only one line remains in which I
+>     have decided to ask for assistance because after lots of attempts at
+>     understanding the logic in the choose_pivot method i was unable to cover
+>     that line with many new test cases introduced. Therefore, I will move on
+>     to step 3 until i can get assistance on that topic
+> 
+> commit eaeabbd7917c0c7fe04e2791d731b7097471a4be
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 8 22:05:12 2017 -0500
+> 
+>     RPT: r007 30
+>     
+>     Working on Step 3 now. Spent some time reviewing mutant and reading over
+>     eigth class slideshows/resources. Successfully installed mutant and ran
+>     rspec and mutant from bundle exec. Initial run of mutant produced 666
+>     mutations and coverage of 0.60%
+> 
+> commit 068bef871251e44257c71c4a25f9c4d630468bce
+> Author: Gurpreet Singh <gurpreet@mailfence.com>
+> Date:   Wed Nov 8 23:25:47 2017 -0500
+> 
+>     RPT: r007 30
+>     
+>     Lots of progress on Step 4. I had to go back and follow the slideshow
+>     here https://github.com/DonSchado/colognerb-on-mutant/blob/master/mutation_testing_slides.pdf
+>     which is one of the links on the class wiki and using this information i
+>     was able to finally get mutant to work successfully and produce
+>     valuable results. Now I have mutant showing 97% coverage and most
+>     mutations being "killed". It is showing a mutation and now i will
+>     attempt to fix it
